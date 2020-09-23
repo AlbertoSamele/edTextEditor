@@ -1,9 +1,13 @@
 # edTextEditor
 
 The project consists in the implementation of a simple text editor. The editor considers a document as a sequence of lines, of arbitrary dimension, numbered starting from one.
+
 The text editor interface is made out of new-line-terminated textual instructions. The instructions can be followed by a portion of text, made out of one or more lines, followed by a . (full stop character), which appears as the only character on the following line. The instructions are made out of a single letter, eventually preceded by one or two ingeres.
+
 The text editor interface is freely inspired from the tradional ED editor.
+
 In some instructions, the integers appear as address specifiers. More precisely, an address specifier is a number n, in decimal notation, that signifies the start of the n-th line; the first line of text has address 1.
+
 The supported instructions are the following, assuming that ind1,ind2 represent two address specifiers so that ind1 ≤ ind2 and the brackets are simply introduced to simplify the reading and comprehension of this text, but won't be included in the actual instruction:
 
 
